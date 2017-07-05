@@ -1,5 +1,5 @@
 # fmux
-tmux configuration for lazy people who like F-keys
+**F**unction-key enabled terminal **MU**ltiple**X**er enhancements
 
 This project implements byobu-like function key bindings for common tmux commands, but without as much overhead as byobu. It also adds some useful status-bar widgets on the right, implemented with a bash script.
 
