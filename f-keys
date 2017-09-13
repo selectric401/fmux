@@ -1,0 +1,29 @@
+# fmux key bindings page
+
+# byobu style F-key bindings (only the useful ones)
+
+bind-key -n F2 new-window
+bind-key -n F3 previous-window
+bind-key -n F4 next-window
+bind-key -n F6 detach
+bind-key -n F7 copy-mode
+bind-key -n C-F6 kill-pane
+bind-key -n F8 command-prompt -p "(rename-window) " "rename-window '%%'"
+bind-key -n C-F8 command-prompt -p "(rename-session) " "rename-session '%%'"
+bind-key -n S-F12 source ~/fmux/f-keys.disable \; display-message "fmux F-keys: DISABLED"
+
+
+# split panes using | and -
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
+
+# switch panes using Alt-arrow without prefix
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# reload config file
+bind r source-file ~/.tmux.conf

@@ -1,0 +1,21 @@
+# disable fmux keybindings
+# this enables re-enabling with Shift-F12 (same as byobu)
+# in fact, this whole concept is ripped wholesale, with love, from byobu
+
+bind-key -n S-F12 source $BYOBU_PREFIX/share/byobu/keybindings/f-keys.tmux \; source $HOME/.byobu/keybindings.tmux \; display-message "fmux F-keys: ENABLED"
+
+# unbind everything that might conflict
+unbind-key -n F2 new-window
+unbind-key -n F3 previous-window
+unbind-key -n F4 next-window
+unbind-key -n F6 detach
+unbind-key -n F7 copy-mode
+unbind-key -n C-F6 kill-pane
+unbind-key -n F8 command-prompt -p "(rename-window) " "rename-window '%%'"
+unbind-key -n C-F8 command-prompt -p "(rename-session) " "rename-session '%%'"
+unbind | split-window -h
+unbind - split-window -v
+unbind -n M-Left select-pane -L
+unbind -n M-Right select-pane -R
+unbind -n M-Up select-pane -U
+unbind -n M-Down select-pane -D

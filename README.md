@@ -3,6 +3,12 @@
 
 This project implements byobu-like function key bindings for common tmux commands, but without as much overhead as byobu. It also adds some useful status-bar widgets on the right, implemented with a bash script.
 
+## Key bindings
+
+I've added the most common/useful F-key shortcuts for moving between tmux windows, as well as splitting existing windows into panes with `Ctrl-b |` and `Ctrl-b -`.
+
+In case any of these bindings interfere with other commands, they can be temporarily toggled on or off with `Shfit-F12`.
+
 ## Installation
 
 1. Clone this repository to your home folder.
