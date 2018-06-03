@@ -25,5 +25,12 @@ bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
 
+# resize panes using Shift-WASD
+bind-key S resize-pane -D 5
+bind-key W resize-pane -U 5
+bind-key A resize-pane -L 5
+bind-key D resize-pane -R 5
+
+
 # reload config file
 bind r source-file ~/.tmux.conf
