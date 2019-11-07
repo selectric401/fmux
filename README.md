@@ -12,6 +12,7 @@ In case any of these bindings interfere with other commands, they can be tempora
 ## Installation
 
 1. Clone this repository to your home folder.
-2. Establish a symbolic link from the tmux.conf file in the repository folder your home folder:    
-    <code>ln -s /home/$USER/fmux/.tmux.conf /home/$USER/.tmux.conf</code>
+2. Establish a symbolic link from the tmux.conf file in the repository folder your home folder:
+    <code>ln -s /home/$USER/fmux/tmux.conf /home/$USER/.tmux.conf</code>
+	If your tmux version is 2.9 or greater, use `tmux-2.9.conf` instead. Version 2.9 introduced some [breaking changes](https://github.com/tmux/tmux/issues/1689) to the style formatting.
 3. Start a new tmux session, or reload the configuration file in existing session(s).
