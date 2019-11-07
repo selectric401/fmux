@@ -5,7 +5,26 @@ This project implements byobu-like function key bindings for common tmux command
 
 ## Key bindings
 
-I've added the most common/useful F-key shortcuts for moving between tmux windows, as well as splitting existing windows into panes with `Ctrl-b |` and `Ctrl-b -`.
+### Function keys:
+
+* F2: New window
+* F3: Previous window
+* F4: Next window
+* F6: Detach session
+* Ctrl-F6: Kill pane
+* F7: Copy mode
+* F8: Rename window
+* Ctrl-F8: Rename session
+* Shift-F12: Toggle bindings on/off
+
+Alt+arrow keys can be used to switch between panes.
+
+### With fmux prefix
+
+* `|`: Split window horizontally
+* `-`: Split window vertically
+* Shift-W/A/S/D: Resize current pane
+* `r`: Reload config from `~/.tmux.conf~`
 
 In case any of these bindings interfere with other commands, they can be temporarily toggled on or off with `Shfit-F12`.
 
@@ -16,3 +35,5 @@ In case any of these bindings interfere with other commands, they can be tempora
     <code>ln -s /home/$USER/fmux/tmux.conf /home/$USER/.tmux.conf</code>
 	If your tmux version is 2.9 or greater, use `tmux-2.9.conf` instead. Version 2.9 introduced some [breaking changes](https://github.com/tmux/tmux/issues/1689) to the style formatting.
 3. Start a new tmux session, or reload the configuration file in existing session(s).
+
+
