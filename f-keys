@@ -31,6 +31,10 @@ bind-key W resize-pane -U 5
 bind-key A resize-pane -L 5
 bind-key D resize-pane -R 5
 
+# move windows
+bind-key Left swap-window -t -1\; select-window -t -1
+bind-key Right swap-window -t +1\; select-window -t +1
+
 
 # reload config file
 bind r source-file ~/.tmux.conf
