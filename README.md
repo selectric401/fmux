@@ -3,6 +3,10 @@
 
 This project implements byobu-like function key bindings for common tmux commands, but without as much overhead as byobu. It also adds some useful status-bar widgets on the right, implemented with a bash script.
 
+### Important Notice
+
+This README, as well as the various versions for different versions of tmux, are currently a shambles. I'm hoping to fix it up soon, but you might notice some irregularities.
+
 ## Key bindings
 
 ### Function keys
@@ -44,4 +48,6 @@ This configuration file sources `~/.tmux-local.conf` if you want to make additio
 3. Run `touch ~/.tmux-local.conf`.
 4. Start a new tmux session, or reload the configuration file in existing session(s).
 
+### Errata
 
+Most of my work on this repository is done on my [personal Git server](https://git.vaxinthebasement.com/selectric/fmux). It may take some time for updates to be pushed from there to GitHub or other locations.
